@@ -16,7 +16,7 @@ client = OpenAI(
 )
 
 here = Path(__file__).resolve().parent
-manual_dir = here / "manuals"
+manual_dir = here.parent / "tractor-manuals"
 question_path = here / "question.txt"
 
 if not manual_dir.exists():
